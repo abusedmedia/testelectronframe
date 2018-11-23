@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+    We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+    <script>
+      var time = setTimeout(function(){
+        var a = document.createElement('a');
+        a.href='frame.html';
+        a.target = '_top';
+        document.body.appendChild(a);
+        a.click();
+        clearTimeout(time)
+      }, 5000)
+    </script>
+</body>
+</html>
