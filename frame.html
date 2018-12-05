@@ -13,7 +13,12 @@
   </style>
 </head>
 <body>
-  <h1>Ora: <script>document.write(JSON.stringify(new Date()))</script></h1>
-  <p><script>document.write(JSON.stringify(process.versions))</script></p>
+  <h1>Conta: <script>
+      var now = 0
+      setInterval(function(){
+          document.write(now);
+          now++;
+      }, 1000)
+  </script></h1>
 </body>
 </html>
